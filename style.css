@@ -1,0 +1,110 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#qrcode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#qrcode {
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+}
+
+#downloadBtn {
+    background: #28a745;
+    display: none;
+}
+
+#downloadBtn:hover {
+    background: #218838;
+}
+
+/* ✅ Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    background: transparent; /* or rgba(0, 0, 0, 0) */
+    color: Black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}

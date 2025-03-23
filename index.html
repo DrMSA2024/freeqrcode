@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+
+        <label for="data">Enter Data:</label>
+        <input type="text" id="data" placeholder="Enter text or URL">
+
+        <label for="filename">Enter Filename:</label>
+        <input type="text" id="filename" placeholder="qr_code">
+
+        <button onclick="generateQRCode()">Generate QR Code</button>
+
+        <!-- Centered QR Code -->
+        <div id="qrcode-container">
+            <div id="qrcode"></div>
+        </div>
+
+        <button id="downloadBtn" style="display: none;" onclick="downloadQRCode()">Download QR Code</button>
+    </div>
+
+    <!-- ✅ Footer Section -->
+    <footer>
+        <p>
+            <img src="mm5.jpg" alt="Logo" class="footer-logo">
+        </p>
+        <p>
+            Developed by <strong>Dr. MSA</strong> @ 2025
+        </p>
+    </footer>
+
+    <!-- ✅ Include QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- ✅ Your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
